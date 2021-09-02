@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* 覆寫styles.css的body */
+
+body {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+/* 覆寫styles.css的form-control*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3B3B3B;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e3e6ec;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#nav-link {
+    font-size: 1.15rem;
+}
+
+#contactService {
+    display: block;
+    text-align: center;
+}
+
+#contactService {
+    display: block;
+    text-align: center;
+}
+
+#contactService {
+    font-weight: bold;
+    margin: auto;
+    background-color: #DFDFDF;
+    color: #5B352C !important;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.pt-10, .py-10 {
+    padding-top: 1.5rem !important;
+}
+
+#main {
+    border: #3B3B3B solid 2px;
+    border-radius: 35px;
+}
+
+#AsideAndMain {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-header-title {
+    color: seashell;
+}
+
+
+
+/* 表單focus效果 */
+.form-control:focus {
+    border-color: #5B352C;
+    box-shadow: inset 0 1px 1px #5B352C;
+}
+
+/*以下為sideBar*/
+
+.cart {
+    padding-left: 0px;
+    list-style: none;
+    margin: 20px auto;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+.cart>li {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cart>li>a {
+    background-color: #5B352C;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+
+.cart ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+.cart>li>a:hover, .cart>li>a.active {
+    background-color: #DB7243;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.cart ul {
+    display: none;
+    padding-left: 0px;
+    background-color: #fff;
+}
+
+/*以下為好友列表*/
+
+.asideMenu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.asideMenu button:focus {
+    outline: none;
+}
+
+.asideMenu {
+    width: 300px;
+    /*整體高度*/
+    height: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-left: 5px solid #ff9a15;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(23, 23, 54, 0.6);
+    transform: translateX(295px);
+    transition: all 0.5s;
+    /*顯示權限為最高*/
+    z-index: 9999 !important;
+}
+
+.asideMenu.active {
+    transform: translateX(0);
+}
+
+.asideMenu .btnShowFriend {
+    position: fixed;
+    top: 50%;
+    left: -20%;
+    padding: 40px 10px;
+    background-color: #ff9a15;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 0 5px rgba(23, 23, 54, 0.6);
+}
+
+.asideMenu .title {
+    font-size: 24px;
+    color: #ff9a15;
+    text-align: center;
+}
+
+.asideMenu div {
+    padding: 10px 0;
+}
+
+.asideMenu ol, li {
+    list-style-type: none;
+}
+
+/* 以下為基本資料區 */
+
+#main .MainTitle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #DB7243;
+}
+
+
+.infoItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+
+#consumerinfo label {
+    display: inline-block;
+    width: 165px;
+    text-align: right !important;
+    margin-bottom: 0rem !important;
+    font-size: 18px;
+}
+
+#consumerinfo input {
+    display: inline-block;
+    width: 250px;
+}
+
+.submitBtnInConsumerinfo input {
+    width: 150px !important;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: #DB7243;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submitBtnInConsumerinfo input:hover {
+    background-color: #d3835e !important;
+}
+
+.submitBtnInConsumerinfo input:active {
+    transform: translateY(4px) !important;
+}
+
+.FisrtAddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* 新增一筆常用配送地址按紐 */
+.AddressSectionBtn{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    padding-left: 170px;
+}
+
+.infoItem .addDelAdressBtn {
+    padding: .2em .4em;
+    border-radius: 35px;
+    color: #fff;
+    background-color: #DB7243;
+    border: #DB7243;
+}
+
+
+.addDelAdressBtn input:hover {
+    background-color: #d3835e !important;
+}
+
+.addDelAdressBtn input:active {
+    transform: translateY(1px) !important;
+}
+
+
+/* 刪除一筆常用地址btn */
+.Addressclose {
+    background: #DB7243;
+    border: none;
+    color: white;
+    border-radius: 35px;
+}
+
+.infoItemIsExposeMealInformation,
+.infoItemIsEnalbe{
+    padding-right: 90px;
+}
+
+
+/* 取消autofill的顏色 */
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3B3B3B;
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* 以下為toggleBotton */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    width: 60px;
+    height: 26px;
+    width: 65px;
+}
+
+.slider.round:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 31px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked+.slider {
+    background-color: #DB7243;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #DB7243;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* 相片上傳btn */
+
+input[type=file]::file-selector-button {
+    border: #DB7243;
+    padding: .2em .4em;
+    background-color: #DB7243;
+    border-radius: 50px;
+    color: #fff;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: #d3835e;
+}
+
+input[type=file]::file-selector-button:active {
+    transform: translateY(1px) !important;
+}
+
+/* 預覽圖 */
+
+.Preview{ 
+    padding-left: 170px;
+}
+
+.PreviewBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color:#ccc;
+    border: #ccc 5px dotted;
+    width: 250px;
+    height: 250px;
+}
+
+.preview_Show{
+    width:230px;
+    height:230px;
+    box-shadow: 5px 5px 5px rgb(226, 221, 221);
+}
+
+/* 信用卡期限 MonthPicker */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    text-align: center;
+}
+
+.ui-datepicker{
+    width:250px !important;
+}

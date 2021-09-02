@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>MassFood_202108072104</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<!--宜青 -->
+      <servlet>
+    <servlet-name>AdmServletsearch</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletsearch</servlet-name>
+    <url-pattern>/admin/adm.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AdmServletlogin</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletlogin</servlet-name>
+    <url-pattern>/admin/adm.do2</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>AdmServletADU</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_ADU</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletADU</servlet-name>
+    <url-pattern>/admin/adm.do1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MemServletADU</servlet-name>
+    <servlet-class>com.Admin.controller.MemberServlet_ADU</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemServletADU</servlet-name>
+    <url-pattern>/admin/member.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MemServletSearch</servlet-name>
+    <servlet-class>com.Admin.controller.MemberServlet_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemServletSearch</servlet-name>
+    <url-pattern>/admin/member.do1</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AdmServletRegister</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletRegister</servlet-name>
+    <url-pattern>/admin/register.do</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>AdmServletRegisterCheck</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_registerCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletRegisterCheck</servlet-name>
+    <url-pattern>/admin/register.do1</url-pattern>
+  </servlet-mapping>
+    
+        <servlet>
+    <servlet-name>AdmServletRegisterUpdate</servlet-name>
+    <servlet-class>com.Admin.controller.AdmServlet_registerUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdmServletRegisterUpdate</servlet-name>
+    <url-pattern>/admin/register.do2</url-pattern>
+  </servlet-mapping>
+  
+          <servlet>
+    <servlet-name>OrderServletSearch</servlet-name>
+    <servlet-class>com.Admin.controller.OrderServlet_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServletSearch</servlet-name>
+    <url-pattern>/admin/order.do</url-pattern>
+  </servlet-mapping>
+   
+            <servlet>
+    <servlet-name>ReportServlet_ajax</servlet-name>
+    <servlet-class>com.Admin.controller.ReportServlet_ajax</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReportServlet_ajax</servlet-name>
+    <url-pattern>/admin/report.do</url-pattern>
+  </servlet-mapping>
+  
+              <servlet>
+    <servlet-name>MerchantServletChart</servlet-name>
+    <servlet-class>com.Merchant.controller.MerchantServlet_chart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MerchantServletChart</servlet-name>
+    <url-pattern>/merchant/merchant.do</url-pattern>
+  </servlet-mapping>
+<!-- 宜青END -->
+<!-- 懷婷 -->
+	<servlet>
+		<servlet-name>MapStatus</servlet-name>
+		<servlet-class>com.Friend.controller.MapFriendStatus</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MapStatus</servlet-name>
+		<url-pattern>/MapStatus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FriendServlet</servlet-name>
+		<servlet-class>com.Friend.controller.FriendSelvet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendServlet</servlet-name>
+		<url-pattern>/FriendServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChatRoomServlet</servlet-name>
+		<servlet-class>com.ChatRoom.controller.ChatRoomServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChatRoomServlet</servlet-name>
+		<url-pattern>/ChatRoomServlet</url-pattern>
+	</servlet-mapping>
+<!--懷婷END -->
+</web-app>

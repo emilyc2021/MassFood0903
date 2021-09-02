@@ -1,0 +1,66 @@
+#main{
+    border: rgb(101, 103, 134) solid;
+    border-radius: 14px 14px 0 14px;
+}
+
+#friend-title {
+	color: #DB7243;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#friend-title button {
+	cursor: pointer;
+	height: 30px;
+	font-size: 14px;
+	position: absolute;
+	right: 50px;
+}
+
+
+.friend-Add.active, .friend-Add:hover, .friend-submit.active,
+	.friend-submit:hover, .friend-check.active, .friend-check:hover {
+	background: #DB7243;
+	color: #eee;
+	border: 1px solid #DB7243;
+}
+
+#friend-title, #friend-list {
+	padding: 30px 10px 50px 10px;
+}
+
+table, tr td {
+	text-align: center;
+	font-size: 14px;
+	padding: 30px 5px;
+}
+
+tbody {
+	display: block;
+	height: 600px;
+	overflow: auto;
+}
+
+thead, tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5px;
+}
+
+thead {
+	width: calc(100% - 1.2em)
+}
+
+.friend-submit {
+	margin: 10px 10px 10px 10px;
+}
+
+.modal-body>img {
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+}

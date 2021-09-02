@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 嚙踝蕭豯�曌��蕭SS reset */
+/*=============================================
+=                  General                    =
+=============================================*/
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* google 嚙踐雓���蕭 */
+    /* font-family: 'Noto Sans TC', sans-serif; */
+	font-family: "Helvetica", "Arial","LiHei Pro","嚙踐�蕭����-嚙踝蕭謚渲","嚙踐嚙踐馳���蕭蹇腦嚙踐�蕭����", sans-serif;
+}
+button:focus {
+    outline: none;
+}
+img{
+	max-width: 100%;
+}
+/*=============================================
+=                  Navbar                    =
+=============================================*/
+nav>a>p{
+	display:inline-block;
+	padding-top: 7px;
+}
+nav{
+	/* height: 60px; */
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.btnsignup{
+    border-radius: 35px;
+    width: 100px;
+}
+/*=============================================
+=                  section                    =
+=============================================*/
+section{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+/*=============================================
+=                  嚙踝蕭�謋脰��雓蕭                     =
+=============================================*/
+.aside{
+      height:450px !important;
+}
+/*嚙踝蕭豯�曌��蕭賹sideBar*/
+.cart{
+    padding-left: 0px;
+    list-style: none;
+	margin: 20px auto;
+}
+.cart a{
+	text-decoration: none;
+	color:#3B3B3B;
+
+}
+.cart>li  {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.cart>li>a{
+    background-color: #3B3B3B;
+    border-radius:35px;
+    color: #fff;
+	display: block;
+	padding: 10px;
+}
+.cart ul li{
+    list-style: none;
+	margin: 10px;
+}
+
+.cart>li>a:hover, 
+.cart>li>a.active{
+	background-color:#F3AD34;
+    border-radius: 35px;
+	color: #3B3B3B;
+}
+
+.cart ul a{
+    padding-left: 0px;
+    background-color: #fff;
+    color: #DB7243;
+}
+.cart ul a:hover{
+    padding-left: 0px;
+    background-color: #F3AD34;
+    color: #FFFFFF;
+    /* font-weight: normal; */
+}
+
+/*嚙踝蕭豯�曌��蕭蹇∪sideBar*/
+/*嚙踝蕭豯�曌��蕭賹main*/
+.main{
+    /* border: rgb(101, 103, 134) solid; */
+    color: #5B352C;
+}
+.main div>h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5B352C;
+    text-decoration: underline;
+}
+.btnsearch{
+    border: 1px solid black;
+}
+/* ���蕭蹓遴���嚙踝蕭����蕭 */
+.selectcolor{
+    list-style: none;
+    background-color:#f5f1f1;
+}
+#viewNum{
+    display: inline;
+}
+th,td{
+    text-align: center;
+}
+.pass{
+    color: rgb(90, 211, 90);
+}
+.pass:hover{
+    color: rgb(55, 138, 55);
+}
+.no{
+    color: red;
+}
+.no:hover{
+    color: rgb(114, 1, 1);
+}
+.page1{
+	    color: #5B352C;
+    font-weight: bold;
+    font-size: 18px;
+}
+.page2{
+
+    text-align: right;
+
+}
+/*=============================================
+=                  Footer                    =
+=============================================*/
+footer{
+	height: 60px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background-color: #3B3B3B;
+}
+footer>div>p{
+	padding-top: 15px;
+}
